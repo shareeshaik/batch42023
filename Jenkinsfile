@@ -13,8 +13,6 @@ pipeline {
           for(line in lines) {
             println line 
           }
-            
-          }
         }
       }
     }
