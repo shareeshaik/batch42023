@@ -5,7 +5,7 @@ pipeline {
    
 	}
 	environment {
-      JAVA_HOME = "/usr/bin/java8"
+      JAVA_HOME = "/usr/bin/java11"
     }
 
 	stages {
