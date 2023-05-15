@@ -4,6 +4,10 @@ pipeline {
       choice choices: ['dev', 'sit', 'pt', 'prod'], description: 'select environment', name: 'ENV'
    
 	}
+	environment {
+      JAVA_HOME = "/usr/bin/java8"
+    }
+
 	stages {
 		stage("welcome to jenkins") {
 			steps {
@@ -14,11 +18,10 @@ pipeline {
 					println "JENKINS_HOME ${JENKINS_HOME}"
 					// printing values of parameters
 					println "selected env is ${params.ENV}"
+					// printing environment variables
+					println "my java home path is ${env.JAVA_HOME}"
 				}
 			}
 		}
 	}
 }
-
-
-
