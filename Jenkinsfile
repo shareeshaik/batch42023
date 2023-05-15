@@ -13,7 +13,7 @@ pipeline {
 					println "WORKSPACE ${WORKSPACE}"
 					println "JENKINS_HOME ${JENKINS_HOME}"
 					// printing values of parameters
-					println "selected env is $(params.ENV)"
+					println "selected env is ${params.ENV}"
 				}
 			}
 		}
