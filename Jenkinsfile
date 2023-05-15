@@ -4,9 +4,8 @@ pipeline {
 		stage("welcome to jenkins") {
 			steps {
 				script {
-					println "hi all welcome to class jenkins"
-					// my comment line1
-					// my comment line2
+					var1 =20
+					println "my var1 value is ${var1}"
 				}
 			}
 		}
