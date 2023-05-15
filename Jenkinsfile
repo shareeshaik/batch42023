@@ -4,20 +4,13 @@ pipeline {
 		stage("welcome to jenkins") {
 			steps {
 				script {
-					for(i=1;i<=10;i++){
+					i =1
+					while(i<=10){
 					println "my i value is ${i}"
+					sleep(5)
 					}
-					lis1=[10,20,30,40]
-					for (i in lis1) {
-					println "my i value is ${i}"
-					}
-					j=1
-					while(j<=10){
-					println "i value is ${j}"
-					j=j+1
 					}
 					}
 				}
 			}
 		}
-	}
