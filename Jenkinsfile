@@ -1,7 +1,7 @@
- 
-def myfn(){
+ def myfn(a,b){
  println "welcome to functions"
-}
+ println "my value is ${a} & my value is ${b}"
+ }
 
  pipeline {
 	agent any 
@@ -10,10 +10,10 @@ def myfn(){
 			steps {
 				script {
 					//calling a function
-					myfn()
+					myfn(20,30)
 					}
 					}
 				}
 			}
 		}
-		
+		 
