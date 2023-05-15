@@ -11,6 +11,11 @@ pipeline {
 					for (i in lis1) {
 					println "my i value is ${i}"
 					}
+					j=1
+					while(j=10){
+					println "i value is ${j}"
+					j=j+1
+					}
 					}
 				}
 			}
