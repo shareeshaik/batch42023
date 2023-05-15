@@ -12,7 +12,7 @@ pipeline {
 					println "my i value is ${i}"
 					}
 					j=1
-					while(j=10){
+					while(j<=10){
 					println "i value is ${j}"
 					j=j+1
 					}
