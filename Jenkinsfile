@@ -4,8 +4,10 @@ pipeline {
 		stage("welcome to jenkins") {
 			steps {
 				script {
-					var1 =input message: 'enter a value', parameters: [string(defaultValue: '10', name: 'var1 ', trim: true)]
-					println "my var1 value is ${var1}"
+					// printing default variables
+					println "BUILD_NUMBER ${BUILD_NUMBER}"
+					println "WORKSPACE ${WORKSPACE}"
+					println "JENKINS_HOME ${JENKINS_HOME}"
 				}
 			}
 		}
