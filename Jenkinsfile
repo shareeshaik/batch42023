@@ -1,7 +1,7 @@
 pipeline {
 	agent any 
 	stages {
-		state("welcome to jenkins") {
+		stage("welcome to jenkins") {
 			steps {
 				script {
 					var1 =input 'enter a value'
