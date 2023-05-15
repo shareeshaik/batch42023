@@ -4,13 +4,12 @@ pipeline {
 		stage("welcome to jenkins") {
 			steps {
 				script {
-					a=10
-					b=20
-					if(a>b){
-					println "${a} is big"
+					for(i=1;i<=10;i++){
+					println "my i value is ${i}"
 					}
-					else {
-					println "${b} is big"
+					lis1=[10,20,30,40]
+					for in in lis1 {
+					println "my i value is ${i}"
 					}
 					}
 				}
